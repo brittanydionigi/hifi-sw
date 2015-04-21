@@ -20,7 +20,7 @@ var SimpleWare = {
 worker.use(SimpleWare);
 
 // We precache known resources with the StaticCacher middleware
-worker.use(new self.StaticCacher(['css/style.css']));
+worker.use(new self.StaticCacher(['../css/app.css', '../css/vendor.css']));
 
 // Middleware example for handling 'virtual' urls and building the
 // response with js.
