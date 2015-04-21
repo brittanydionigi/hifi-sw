@@ -22,5 +22,12 @@
     <a href="#">Search Podcasts</a>
     <h2>My Podcasts</h2>
     <p>None</p>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('./js/service-worker.js');
+      } else {
+        console.info('No SW present :(');
+      }
+    </script>
   </body>
 </html>
